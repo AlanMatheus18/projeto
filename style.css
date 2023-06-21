@@ -4,10 +4,21 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("/imgs/desktop-wallpaper-rick-and-morty-throughout-the-incredible-rick-and-mor-papel-de-parede-pc-papel-de-parede-do-notebook-de-computador.jpg");
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-image: url("/projeto/imgs/desktop-wallpaper-rick-and-morty-throughout-the-incredible-rick-and-mor-papel-de-parede-pc-papel-de-parede-do-notebook-de-computador.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.titulo{
+    display: block;
+    font-size: 80px;
+    margin: 20px;
 }
 
 
@@ -25,8 +36,11 @@ body{
     height: 50px;
     background: transparent;
     border: transparent;
-    
+}
 
+.lua:hover{
+    background-color: black;
+    border-radius: 50%;
 }
 
 .sol{
@@ -34,12 +48,35 @@ body{
     height: 50px;
 }
 
-.btn{
+.sol:hover{
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.btn1{
     border: none;
     background-color: transparent;
     border-radius: 50%;
 }
 
-main{
+.btn2{
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+
+.main-card{
     background-color: #272b33;
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #272b33;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: 10px;
 }
