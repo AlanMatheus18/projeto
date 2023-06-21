@@ -28,7 +28,6 @@ main{
     background-color: #272b33;
     border-radius: 0px 0px 5px 5px;
     height: 100px;
-    
 }
 
 .lua{
@@ -68,10 +67,8 @@ main{
 
 .main-card{
     background-color: #272b33;
-    
     display: grid;
     grid-template-columns: auto auto auto auto auto;
-    background-color: #272b33;
 }
 
 .card{
