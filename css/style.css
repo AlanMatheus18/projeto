@@ -10,14 +10,13 @@ main{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    /* background-image: url("/projeto/imgs/desktop-wallpaper-rick-and-morty-throughout-the-incredible-rick-and-mor-papel-de-parede-pc-papel-de-parede-do-notebook-de-computador.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .titulo{
     display: block;
-    font-size: 80px;
+    font-size: 40px;
     margin: 20px;
 }
 
@@ -28,6 +27,7 @@ main{
     background-color: #272b33;
     border-radius: 0px 0px 5px 5px;
     height: 100px;
+    width: 100%;
 }
 
 .lua{
@@ -65,15 +65,36 @@ main{
 }
 
 
-.main-card{
+.container{
+   display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: 100%;
     background-color: #272b33;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
 }
 
 .card{
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    margin: 10px;
+    position: relative;
+    width: 250px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 45px;
+    z-index: 2;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    transition: all 0.4s;
+    box-shadow: 0 0 20px rgb(8, 255, 28);
+}
+
+.card>img{
+    width: 230px;
+    display: block;
 }
